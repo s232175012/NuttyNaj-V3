@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NuttyNaj</title>
+<link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#" class="logo">
+    <img src="Images/NuttyLogo.jpeg" alt="NuttyNaj logo" onerror="this.src='https://placehold.co/120x120?text=NuttyNaj+Logo'">
+    <span>NuttyNaj</span>
+  </a>
+  <button class="cart-btn" id="openCart">Cart <span id="cartCount">0</span></button>
+</header>
+
+<!-- SECTION 1 : HOME -->
+<section class="hero">
+  <div class="carousel">
+    <div class="card left float-1">
+      <img src="Images/cashew-milkchoc.jpg" alt="Cashew Milk Chocolate" onerror="this.src='https://placehold.co/400x550/d9a55a/2b1a08?text=CASHEW+NUTS'">
+    </div>
+    <div class="card center float-2">
+      <img src="Images/cashew-yoghurt.jpg" alt="Cashew Yoghurt" onerror="this.src='https://placehold.co/400x550/d9a55a/2b1a08?text=CASHEW+YOGHURT'">
+    </div>
+    <div class="card right float-3">
+      <img src="Images/macadamia-peri.jpg" alt="Macadamia Peri Peri" onerror="this.src='https://placehold.co/400x550/d9a55a/2b1a08?text=MACADAMIA+PERI'">
+    </div>
+  </div>
+
+  <h1><span class="line1">Real nuts.</span><br><span class="line2">Real good.</span></h1>
+  <p class="hero-sub">Nuts and dried fruit, hand-finished in Benoni and packed in kraft boxes built for the shelf.</p>
+
+  <div class="hero-btns">
+    <a href="#stockist" class="btn-dark">Become a stockist</a>
+    <a href="#shop" class="btn-outline">Shop the range</a>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="marquee-track">
+  <span>Lightly salted</span><span>Mixed and salted</span><span>Jungle mix</span><span>Milk chocolate</span><span>Extra hot peri-peri</span><span>Roasted plain</span><span>Raw</span><span>Roasted salted</span><span>Yoghurt coated</span>
+  <span>Lightly salted</span><span>Mixed and salted</span><span>Jungle mix</span><span>Milk chocolate</span><span>Extra hot peri-peri</span><span>Roasted plain</span><span>Raw</span><span>Roasted salted</span><span>Yoghurt coated</span>
+</div></div>
+
+<!-- SECTION 2 : SHOP -->
+<section class="shop" id="shop">
+  <h2><span class="line1">Eight kinds.</span><br><span class="line2">Nine finishes.</span></h2>
+  <p class="shop-sub">Every box is 50g and hand-packed. From R18 a box, with free courier on orders over R350.</p>
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="cashew">Cashew</button>
+    <button class="filter" data-filter="macadamia">Macadamia</button>
+    <button class="filter" data-filter="pecan">Pecan</button>
+    <button class="filter" data-filter="walnut">Walnut</button>
+    <button class="filter" data-filter="hazelnut">Hazelnut</button>
+    <button class="filter" data-filter="pistachio">Pistachio</button>
+    <button class="filter" data-filter="mixed">Mixed nuts</button>
+    <button class="filter" data-filter="dried">Dried fruit</button>
+  </div>
+
+  <div class="grid" id="productGrid"></div>
+  <p class="no-result" id="noResult" hidden>No products in this category yet.</p>
+
+  <div class="hero-btns">
+    <a href="#stockist" class="btn-outline">Become a stockist</a>
+  </div>
+</section>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head">
+    <h2>Your box</h2>
+    <button class="close-btn" id="closeCart">Close</button>
+  </div>
+
+  <div class="cart-body" id="cartItems"></div>
+
+  <div class="cart-foot">
+    <div class="cart-total"><span>Total</span><strong id="cartTotal">R0</strong></div>
+    <p class="courier-msg" id="courierMsg">Add R351 more for free courier. Otherwise the courier cost is confirmed with your order.</p>
+    <a href="#" class="whatsapp-btn" id="whatsappBtn" target="_blank">Order on WhatsApp</a>
+    <button class="empty-btn" id="emptyCart">Empty the cart</button>
+  </div>
+</aside>
+
+<script src="Scripts/javascript.js"></script>
+</body>
+</html>
